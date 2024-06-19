@@ -1,0 +1,167 @@
+<!--.Inside this element, we can write CSS code-->
+<!--.In this case, Button is the CSS Selector: which elements we are targetting-->
+<!--.Text to the left of the colon is CSS Property: what we are changing-->
+<!--.Right to the colon is CSS Value: what we are changing the property to-->
+
+<!--.Space (around an element) = margin-->
+<!--.Trick to getting round buttons: set the border radius to half the width or height (look at the smaller one)-->
+
+<!--.General technique: create element with HTML and then style with CSS one-by-one-->
+
+<!--.:hover will only work when we hover over the button (also known as pseudo-class: adds extra styles in a certain situation)-->
+<!--.Opacity: tells us how see through an HTML element is (1: normal 0: opaic)-->
+<!--.Transition takes in 2 variables, what we want to transition and how much seconds-->
+
+<!--.Padding: space inside the button-->
+<!--.Padding is good since when we change the text, the button will resize with the text-->
+<!--.Vertical align: aligns everything to the top (default the buttons align by text)-->
+<style>
+    .subscribe-button {
+            background-color:rgb(200, 0, 0); 
+            color:white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom:10px;
+            padding-left:16px;
+            padding-right:16px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: opacity 0.15s;
+            vertical-align: top;}
+            
+    
+    .subscribe-button:hover {
+            opacity: 0.8;
+    }
+
+    .subscribe-button:active{
+            opacity: 0.5;
+    }
+
+    .join-button:hover{
+            background-color: rgb(6,95,212);
+            color: white;
+    }
+    
+    .join-button:active{
+            opacity:0.7;
+    }
+
+    .join-button {
+            background-color:white;
+            border-color: rgb(6,95,212);
+            border-style: solid;
+            border-width: 1px;
+            color: rgb(6,95,212);
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+            vertical-align: top;
+            padding-top: 9px;
+            padding-bottom:9px;
+            padding-left:16px;
+            padding-right:16px;}
+
+    .tweet-button {
+            background-color: rgb(29, 155, 240);
+            color:white;
+            border: none;
+            height:36px;
+            width:74px;
+            border-radius:18px;
+            font-weight: bold;
+            font-size:15px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: box-shadow 0.15s}
+    
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    }
+
+</style>
+<!--.For box-shawdow: first value-horizonal position, second value-vertical position, third value-blur-->
+<!--.rgba: the a stand for opacity-->
+
+<!--.Class attribute helps label HTML elements-->
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+</button>
+
+<button class="tweet-button">
+    Tweet 
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--.Challenge Exercise-->
+</figure>
+<style>
+    .second-line{
+        font-size:24px;
+        font-weight:bold;
+        font-family: "Times New Roman";
+        margin-top: 50px;
+    }
+    .amazon-sign{
+        color: rgb(0,113,133);
+        vertical-align: bottom;
+    }
+    
+    .third-line{
+        color: rgb(0,118,0);
+        font-family: "Times New Roman";
+        font-weight: bold;
+    }
+
+    .fourth-line{
+        font-family: "Times New Roman";
+    }
+
+    .button-one{
+        color: black;
+        background-color: rgb(255,216,20);
+        cursor: pointer;
+        width: 110px;
+        height: 30px;
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        border: none;
+    }
+
+    .button-two{
+        color: black;
+        background-color: rgb(255,164,28);
+        cursor: pointer;
+        width: 110px;
+        height: 30px;
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        border: none;
+        margin-left: 8px;
+    }
+</style>
+
+<a href="https://www.amazon.com" target="_blank" class="amazon-sign">Back to Amazon</a>
+<p class="second-line">Nike Black Running Shoes</p>
+<p class = "third-line">$39 - in stock.</p>
+<p class="fourth-line">Free delivery tomorrow.</p>
+<button class="button-one">Add to Cart</button>
+<button class="button-two">Buy Now</button>
