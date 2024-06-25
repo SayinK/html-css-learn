@@ -8,11 +8,24 @@
 <!--<div>:just a box (by default its a box element); need div to build containers-->
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
         <title>YouTube.com</title>
         <style>
+            .p{
+                font-family: "Roboto", Arial;
+            }
             .thumbnail{
                 width:300px;
                 display: block;
+            }
+            .video-title{
+                margin-top:0;
+                font-size:14px;
+                font-weight:500;
+                line-height: 20px;
             }
             .search-bar{
                 display: block;
@@ -25,11 +38,24 @@
             }
             .channel-picture{
                 display:inline-block;
-                width: 50px;
+                width: 40px;
+                vertical-align: top;
+                border-radius:50px;
             }
             .video-info{
                 display:inline-block;
                 width: 200px;
+            }
+            .thumbnail-row{
+                margin-bottom:12px;
+            }
+            .video-author,.video-stats{
+                font-size:12px;
+                color:rgb(96,96,96);
+            }
+            .video-stats{
+                
+
             }
 
         </style>
@@ -39,7 +65,7 @@
         <input class ="search-bar" type="textbox" placeholder="Search">
 
         <div class="video-prev">
-            <div>
+            <div class="thumbnail-row">
                 <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
             </div>
             
