@@ -1,0 +1,31 @@
+<!--Position static is the default position-->
+<!--top specifies how far away our element is from the top of the window-->
+<!--left tells us how much space is between the element and the left edge of the window-->
+<!--If we use left and right (or top and bottom) at the same time, the element will stretch-->
+<!--If you want the fized element to resize with the page, then you could use top, left, right, and bottom; but if you want a specific height or width, use height or width-->
+
+<!--position fixed=placed in the browser window (doesn't move when we scroll); this still sticks to the page-->
+<!--position absolute=placed on the page (constantly moving)-->
+<!--position relative: moves normally-->
+
+<!--Elements with a higher Z-index will appear in front of elements with a lower Z-index-->
+
+<!--Whenever a position absolute is inside a position fixed element, its going to be placed relative to the position fixed element-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Position Practice</title>
+</head>
+<body style="height:3000px;padding-top:60px;padding-left:80px;">
+    <div style="background-color:black;color:white;position:fixed;top:0px;left:0px;right:0px;height:50px;z-index:100;">header</div>
+    <div style="background-color:green;color:white;position:fixed;left:0;bottom:0px;top:50px;width:72px;">sidebar<div style="position:absolute;background-color:red;color:white;right:0px;top:0px;z-index:2;">X</div></div>
+
+
+
+    <div style="background-color:lightblue;height:200px;width:200px;position:static;margin-top:60px;">div 1<div style="position:absolute;background-color:red;color:white;right:0px;top:0px;z-index:2;">X</div></div>
+    <div style="background-color:lightpink;height:200px;width:200px;position:relative;">div 2</div>
+
+   
+</body>
+</html>
